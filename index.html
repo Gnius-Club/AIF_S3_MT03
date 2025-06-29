@@ -1,24 +1,425 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 3 3º Secundaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 3 3º Secundaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes comprendan el concepto de variables en MicroPython y su función como la 'memoria' del programa.</li>
+                                        <li>Que sean capaces de crear, manipular (incrementar, decrementar) y visualizar variables utilizando entradas digitales y la pantalla del Micro:bit.</li>
+                                        <li>Que conceptualicen la importancia de los datos almacenados en variables como el 'alimento' fundamental para los sistemas de Inteligencia Artificial.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Análisis profundo y contextualización de la misión con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos, síntesis de "insights" y reflexión iterativa.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un programa en MicroPython que utiliza variables para implementar un contador inteligente (incrementar, reiniciar, mostrar en pantalla) con retroalimentación visual, demostrando el concepto de "memoria" del programa.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable y de buena velocidad.</li>
+                                        <li>Cuentas de alumno para las plataformas relevantes.</li>
+                                        <li>Chat "Agente Gnius" (Xolo) operativo.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode (Python editor).</li>
+                                                <li>Tener kits Micro:bit v2 con IOTbit listos y organizados.</li>
+                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
+                                            <ul>
+                                                <li>Revisar el flujo de esta sesión, enfocándose en el concepto de variables, su declaración (`contador = 0`), manipulación (`+= 1`), visualización (`str()`), y el 'debouncing' con `time.sleep_ms()`.</li>
+                                                <li>Comprender el código Python de ejemplo generado por Xolo para esta misión.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong>
+                                            <ul>
+                                                <li>Tener un Micro:bit con IOTbit programado con un contador simple (incrementar con A, reiniciar con B, mostrar en pantalla) para una demostración inicial si es necesario.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
+                <p>Establecer el tono profesional, activar la personalización de la IA y presentar la misión del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Buenos días, equipo. Hasta ahora, sus sistemas emiten señales y toman decisiones. Pero, ¿qué pasa si el Micro:bit necesita 'recordar' algo? Hoy, les daremos la capacidad de tener 'memoria' a sus sistemas."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación y Personalización de Xolo</h3>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, abran su interfaz de Xolo y salúdenlo. Incluyan su **perfil de aprendizaje** (Piloto, Ingeniero, Biologista, Navigator, Comunicador, Científico) y un **interés personal actual**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil [Ingeniero], y me interesa cómo los contadores automatizan la producción. Listo.'</strong> Xolo usará esto para personalizar su interacción. Confirmen haber recibido su saludo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy profundizamos en las variables, la 'memoria' de los programas. Entenderán cómo permiten a los sistemas recordar eventos y guardar valores. Esta capacidad es el 'alimento' crucial para la Inteligencia Artificial. Analizaremos ejemplos reales de cómo los contadores se usan en producción, la recolección de datos científicos, y encuestas online, conectando el concepto a aplicaciones prácticas."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement"</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Comprender las variables como 'memoria', crear y manipularlas en MicroPython con entradas y pantalla, y conceptualizar su importancia como 'alimento' para la IA.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM (Aprendizaje Individual) ⏰ 10 minutos</h2>
+                <p>Facilitar un aprendizaje personalizado e individual con Xolo para comprender el concepto de variables como memoria y alimento para la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, formulen a Xolo la siguiente pregunta: <strong>'Xolo, explícame qué son las variables en programación, cómo funcionan como la 'memoria' de un programa, y por qué los datos almacenados en ellas son cruciales para el funcionamiento y el entrenamiento de los sistemas de Inteligencia Artificial.'</strong> Analicen la respuesta de Xolo con atención."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
+                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Mientras interactúan con Xolo, exploren a fondo los conceptos. Si algo no les queda claro, pídanle a Xolo que profundice. Por ejemplo: <strong>'Xolo, ¿qué es la analogía de la caja con una etiqueta para variables?'</strong> o <strong>'¿Cómo permiten las variables que el programa recuerde su estado actual?'</strong> También pregunten: <strong>'¿Por qué los datos crudos de sensores son el "alimento" para el entrenamiento de modelos de IA?'</strong> El objetivo es un aprendizaje profundo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
+                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
+                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Muy bien. Con su comprensión de variables, es hora de aplicarlas. Formen sus equipos de proyecto de **2 personas**. Designen un gestor de proyecto. Este trabajo se realizará en equipo. Cada equipo usará su Micro:bit y placa IOTbit."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
+                            <p>El equipo diseña una intención para un "Contador Inteligente" con botones A/B y pantalla de Micro:bit, y la describe a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Su misión es crear un 'Contador Inteligente'. Piensen en un escenario real donde un contador sea útil, como automatización o ciencia. Diseñen una 'vibe' donde los botones A y B controlen el conteo, y el valor se muestre en la pantalla. Describan su idea a Xolo, incluyendo cómo se inicia y reinicia. Ejemplo de input a Xolo: <strong>'Xolo, queremos un contador de asistencia. Botón A incrementa, B reinicia. Mostrar en pantalla. Si llega a 10, cara feliz; si reinicia, cara neutral.'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Generación de Código por IA</h3>
+                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python basado en la "vibe" del equipo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python basado en su 'vibe'. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
+<pre>
+# Importaciones necesarias para el Micro:bit y el tiempo
+
+from microbit import * # Importa funcionalidades básicas del Micro:bit
+
+import time
+
+# Definimos la variable global para el conteo de asistentes
+
+# Es crucial que se defina FUERA del bucle while True para que mantenga su valor
+
+asistentes_actuales = 0
+
+# --- Configuración inicial ---
+
+def setup_contador():
+
+    display.scroll("Contador Listo") # Mensaje inicial
+
+    display.show(Image.ASLEEP) # Cara neutral al inicio
+
+# --- Bucle principal del programa ---
+
+setup_contador() # Ejecutamos la configuración inicial
+
+while True:
+
+    # Lógica para el botón A (incrementar asistentes)
+
+    if button_a.is_pressed():
+
+        asistentes_actuales += 1 # Incrementar el contador en 1
+
+        display.show(str(asistentes_actuales)) # Mostrar el número actual
+
+        # Pequeña pausa para 'debouncing' - evitar que un solo click cuente muchas veces
+
+        time.sleep_ms(200)   
+
+
+        # Lógica condicional: Si el contador llega a 10
+
+        if asistentes_actuales == 10:
+
+            display.show(Image.HAPPY) # Mostrar cara feliz
+
+            time.sleep(1) # Pausa para que se vea la cara feliz
+
+            display.show(str(asistentes_actuales)) # Volver a mostrar el número
+
+    # Lógica para el botón B (reiniciar contador)
+
+    if button_b.is_pressed():
+
+        asistentes_actuales = 0 # Reiniciar el contador a cero
+
+        display.show(str(asistentes_actuales)) # Mostrar 0
+
+        display.show(Image.ASLEEP) # Mostrar cara neutral
+
+        time.sleep_ms(200) # Pausa para 'debouncing'
+
+
+    # Lógica para mantener la pantalla actualizada si no hay interacción (opcional, pero buena práctica)
+
+    # Esto es importante para que el número se mantenga visible si el botón se suelta
+
+    if not button_a.is_pressed() and not button_b.is_pressed():
+
+        display.show(str(asistentes_actuales))
+</pre>
+<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
+                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Analicen el código para su contador. Pregúntenle a Xolo: <strong>'¿Por qué la línea `asistentes_actuales = 0` debe estar fuera del bucle `while True`, y qué pasaría si estuviera dentro?'</strong> También: <strong>'¿Qué significa `str()` al mostrar el número, y por qué es necesario?'</strong> Busquen también cómo la variable interactúa con la lógica de decisión."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
+                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Implementen el script en MakeCode. Asegúrense de que Micro:bit y IOTbit estén conectados. Carguen y prueben el contador: presionen A para incrementar, B para reiniciar. Observen la pantalla. Si el comportamiento es inesperado (ej. cuenta doble), consulten a Xolo para depurar. Si Xolo les indica un problema de 'debouncing', pregunten: <strong>'¿Cómo puedo ajustar el `time.sleep_ms()` para mitigar el rebote del botón y qué afecta la responsividad?'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión en Equipo) ⏰ 5 minutos</h2>
+                <p>El facilitador modera la presentación de resultados y una reflexión final enfocada en el proceso colaborativo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: "Think" (Individual)</h3>
+                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Individualmente, piensen: 'Más allá de contar, ¿qué otro tipo de 'memoria' o dato podría almacenar su Micro:bit para un proyecto más inteligente? ¿Por qué sería importante que un sistema de IA recordara esa información?'"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "Pair" (Parejas)</h3>
+                            <p>Instrucciones para la discusión en parejas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, discutan sus reflexiones con su compañero. Compartan ideas sobre variables adicionales que podría almacenar su Micro:bit y cómo eso beneficiaría a un sistema de IA. ¿Pueden pensar en un ejemplo práctico?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "Share" (Grupo)</h3>
+                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Algunos equipos, compartan las conclusiones más interesantes de su diálogo. ¿Qué tipo de 'memoria' extra encontraron que sería valiosa para su contador, y cómo la usaría una IA?"</p>
+                                <p class="dialogue user"><strong>Equipo 1:</strong> "Pensamos que el Micro:bit podría recordar el 'pico de asistentes' para logística de eventos, útil para una IA para optimizar capacidad."</p>
+                                <p class="dialogue user"><strong>Equipo 2:</strong> "Propusimos que guardara el 'tiempo total' del evento (`tiempo_evento_segundos`). Una IA podría correlacionar asistentes con duración para predecir congestión en futuros eventos."</p>
+                                <p class="dialogue user"><strong>Equipo 3:</strong> "Nuestra idea fue almacenar la 'frecuencia de entrada' (`total_asistentes / tiempo_total`). Una IA de gestión de flujos de personas podría usar esto para control de acceso o seguridad en tiempo real."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis Final</h3>
+                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Extraordinario. Han pasado de ejecutar instrucciones a dar 'memoria' a sus sistemas. Vieron cómo una simple variable almacena estados y cómo la lógica condicional interactúa con esa 'memoria'. Las ideas compartidas demuestran que la capacidad de 'recordar' es la base de la inteligencia. Cada dato almacenado es información valiosa. Los datos son el combustible esencial para la IA. La próxima sesión, exploraremos cómo sus sistemas pueden 'decidir' de forma más compleja usando operadores lógicos para combinar múltiples condiciones."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
